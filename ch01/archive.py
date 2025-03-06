@@ -3,7 +3,7 @@ import json
 from urllib.request import urlopen
 
 print("Let's find an old website.")
-site = input("Type a website URL: ")
+site = input("Type a website URL: (example lolcats.com) ")
 era = input("Type a year, month, and day, like 20150613: ")
 url = "http://archive.org/wayback/available?url=%s&timestamp=%s" % (site, era)
 response = urlopen(url)
